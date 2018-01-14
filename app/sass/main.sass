@@ -1,0 +1,575 @@
+//@import "fonts"
+@import "libs"
+@import "vars"
+@import "base"
+
+*
+	box-sizing: border-box
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+.header
+	background-color: #fff
+	min-height: 119px
+	&__content
+		min-height: 119px
+
+.logo
+	display: inline-block
+	margin-right: auto
+	min-width: 330px		
+
+.menu
+	width: 55%
+	li
+		display: inline-block
+		margin-left: 4%
+
+.menu__item:nth-child(1)
+	.menu__link
+		.fa
+			color: #6acdfe
+.menu__item:nth-child(2)
+	.menu__link
+		.fa
+			color: #76e786
+			position: relative
+			top: 2px
+.menu__item:nth-child(3)
+	.menu__link
+		.fa
+			color: #fcd86b
+.menu__item:nth-child(4)
+	.menu__link
+		.fa
+			color: #fca26b
+			font-size: 23px
+			position: relative
+			right: -1px
+			top: 2px
+.menu__item:nth-child(5)
+	.menu__link
+		.fa
+			color: #a751fd												
+.menu__link
+	color: $black
+	font-size: 15px
+	font-weight: 500
+	letter-spacing: 0.73px
+	.fa
+		display: inline-block
+		margin-right: 5px
+		font-size: 20px
+		position: relative
+		top: 1px		
+
+
+.card
+	width: 31.5%
+	padding: 20px
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: none
+	display: flex
+	flex-direction: column
+	min-height: 715px
+.cart__title
+	display: flex
+	align-items: center
+	color: $black
+	font-size: 21px
+	font-weight: 500
+	letter-spacing: 2.08px
+	margin-bottom: 18px
+	img
+		display: inline-block
+		margin-right: 15px
+
+.card
+	position: relative
+	.card__form
+		.card__form__input
+			box-sizing: border-box
+			padding: 30px 20px
+			border-radius: 18px
+			color: $black
+			font-size: 21px
+			font-weight: 500
+			letter-spacing: 2.08px
+			background-color: $blue
+			border: none !important
+			&:focus
+				border: none !important
+				box-shadow: none !important
+
+
+.choise-currency
+	margin-bottom: 20px
+	.select-wrapper
+		width: 263px
+		border: 2px solid #d5d9df
+		border-radius: 50px
+		margin-bottom: 0
+	.dropdown-content li>a, .dropdown-content li>span
+		color: $black
+		font-size: 13px	
+	.dropdown-content.select-dropdown
+		top: -3px
+		left: -3px
+	.select-wrapper input.select-dropdown
+		margin: 0
+		border: none !important
+		padding: 0 20px
+		height: 40px
+		color: $gray
+		font-size: 13px
+		position: relative
+		box-sizing: border-box
+	.select-wrapper span.caret
+		right: 20px
+		width: 15px
+		color: transparent
+		background-image: url(../img/arrow.png)
+		background-repeat: no-repeat
+		background-position: center	
+.choise-currency__title
+	color: $black
+	font-size: 15px
+	font-weight: 500
+	letter-spacing: 0.73px
+	margin-bottom: 5px
+	padding-left: 20px
+[type=radio]:not(:checked)+label:after, [type=radio]:not(:checked)+label:before
+	border-color: #d5d9df
+[type=radio].with-gap:checked+label:after, [type=radio].with-gap:checked+label:before, [type=radio]:checked+label:after
+	border-color: #d5d9df
+[type=radio].with-gap:checked+label:after
+	transform: scale(.7)
+
+[type=radio].with-gap:checked+label:after, [type=radio]:checked+label:after
+	background-color: #38cfff	
+
+[type=radio]+label:after, [type=radio]+label:before
+	top: 4px
+	width: 20px
+	height: 20px
+
+.get
+	.card__form .card__form__input
+		background-color: $orange
+	.card__form__item
+		.item--bg
+			background-color: $orange
+			border-left: 4px solid #ffc000
+	[type=radio].with-gap:checked+label:after, [type=radio]:checked+label:after
+		background-color: #ffc000	
+.card__form__item
+	width: 100%
+	left: 0
+	position: relative
+	height: 35px
+	max-height: 35px
+	margin-bottom: 3px
+	&.active
+		.item--bg
+			display: block
+	.item--bg
+		display: none
+		position: absolute
+		width: 112%
+		height: 100%
+		left: -20px
+		background-color: $blue
+		border-left: 4px solid #38cfff
+	label
+		width: 100%
+		position: absolute
+		width: 100%
+		height: 100%
+		padding: 5px 0
+		transform: rotate(180deg)
+
+.form__currency__content
+	display: flex
+	align-items: center
+	transform: rotate(-180deg)
+	position: relative
+	right: -5px
+.form__currency__icon
+	width: 35px
+	display: flex
+	justify-content: center
+	img
+		display: inline-block
+.form__currency__text
+	color: $black
+	font-size: 13px	
+
+[type=radio]:checked+label, [type=radio]:not(:checked)+label
+	padding-left: 27px
+	height: auto
+.replenish
+	color: #9a98ae
+	font-size: 12px
+	display: inline-block
+	margin-left: auto
+	letter-spacing: 0.3px
+	span
+		font-weight: 500
+		color: #ffb400
+
+
+
+.course__item
+	.form__currency__content
+		transform: rotate(0deg)
+		position: static
+		left: 0
+		right: 0
+
+
+.personalInfo
+	button
+		border: none
+		display: block
+		margin: 0 auto
+
+.agreement
+	color: $black
+	font-size: 13px !important
+	margin-bottom: 25px
+
+[type=checkbox].filled-in:not(:checked)+label:after
+	border: 2px solid #d5d9df
+	border-radius: 4px
+
+[type=checkbox].filled-in:checked+label:after
+	background-color: #ffc000
+	border: 2px solid #ffc000		
+
+.personalInfo__title
+	color: $black
+	font-size: 15px
+	font-weight: 500
+	letter-spacing: 0.73px
+	margin-bottom: 10px
+.personalInfo
+	.personalInfo__input
+		border: 2px solid #d5d9df !important
+		color: #9a98ae
+		font-size: 13px !important
+		border-radius: 40px !important
+		height: 40px !important
+		padding-left: 20px !important
+		box-sizing: border-box !important
+		&:focus
+			box-shadow: none !important
+
+.personalInfo__input::-webkit-input-placeholder
+	color: #9a98ae
+.card__form__input::-webkit-input-placeholder
+	color: $black
+	opacity: 0.3
+.personalInfo__input::-moz-placeholder
+	color: #9a98ae
+.card__form__input::-moz-placeholder
+	color: $black
+	opacity: 0.3
+
+.send
+	overflow-x: hidden
+.course
+	padding: 8px 0
+	position: relative
+	z-index: 1
+	margin-bottom: 30px
+	.course--bg
+		position: absolute
+		width: 200%
+		left: -50%
+		height: 100% 
+		background-color: $green
+		z-index: -1
+.course__exchange
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 15px
+	padding-top: 10px 
+	.course__exchange__title
+		font-size: 15px
+		font-weight: 500 
+
+.course__item.mb
+	margin-bottom: 0
+.course__item
+	display: flex
+	justify-content: space-between
+	align-items: center 
+	margin-bottom: 15px
+	&:nth-child(2)
+		margin-bottom: 0
+.course__currency__content
+	display: flex
+	align-items: center
+
+.course__currency__icon
+	width: 30px
+	display: flex
+	align-items: center
+
+.course__item__price
+	font-size: 15px
+	font-weight: 500
+
+
+.footer__content
+	padding: 20px 0
+	display: flex
+	justify-content: space-between
+	align-items: center 
+
+.footer__menu
+	width: 50%
+	display: flex
+	justify-content: flex-end
+	li
+		display: inline-block
+		margin-left: 5%
+	.menu__item:nth-child(1) .menu__link .fa
+		color: #fcd86b
+	.menu__item:nth-child(2) .menu__link .fa
+		color: #6acdfe
+	.menu__item:nth-child(3) .menu__link .fa
+		color: #fca26b	
+
+.material-icons.dp48
+	font-size: 45px
+	position: absolute
+	top: 25px
+	right: 10px
+	z-index: 1000
+	display: none	
+	color: #000
+
+.mobile-btn
+	display: none
+
+// ul#slide-out
+// 	display: none		
+
+
+
+.rules-title
+	.fa
+		color: #6acdfe
+
+
+.rules__section
+	width: 100%
+	background-color: #fff
+	border-radius: 10px
+	padding:  25px 50px
+	p,ul
+		color: $black
+		font-size: 16px
+		font-weight: 400
+		line-height: 27px
+		letter-spacing: 0.8px
+		margin: 0
+	strong
+		font-weight: 700		
+
+.rules__item
+	margin-bottom: 45px
+
+.rules__item__title
+	display: flex
+	align-items: center
+	color: $black
+	font-size: 21px
+	font-weight: 500
+	letter-spacing: 2.08px
+	margin-bottom: 20px
+	img
+		display: inline-block
+		margin-right: 15px
+
+.rules__item__text
+	padding-left: 30px
+	p
+		margin-bottom: 5px
+	ul
+		li
+			margin-bottom: 5px
+		ul
+			padding-left: 25px
+			margin-bottom: 0
+			li
+				margin-bottom: 5px			
+	
+
+.breadcumbs__list
+	padding-top: 20px
+	li
+		display: inline-block
+		margin-right: 35px
+		position: relative
+		&:last-child
+			&:after
+				display: none
+		&:after
+			content: "\f178"
+			font-family: FontAwesome
+			font-size: 16px
+			position: absolute
+			top: -3px
+			right: -30px
+		&.active
+			a
+				font-size: 15px
+				color: #fca26b
+				font-weight: 500
+		a
+			color: $black
+			font-size: 13px
+			letter-spacing: 0.67px
+
+
+.modal
+	max-height: 100%
+	width: 100%
+	max-width: 420px
+	background-color: #fff
+	border-radius: 10px
+	overflow-y: initial
+	input
+		margin-bottom: 10px !important
+	.exit
+		color: #ffb400
+		font-size: 13px
+		text-align: center
+		display: block
+		margin: 0 auto
+		margin-top: 10px
+	.modal__close
+		width: 20px
+		height: 20px
+		position: absolute
+		right: -25px
+		top: -20px
+		&:hover
+			cursor: pointer
+		.fa
+			font-size: 20px
+			color: #6acdfe	
+
+
+
+.personalInfo__title.modal__title
+	display: flex
+	align-items: center
+	font-size: 21px
+	font-weight: 500
+	letter-spacing: 1px
+	img
+		display: inline-block
+		margin-right: 15px
+
+.modal__label
+	font-size: 15px
+	font-weight: 500
+	color: $black
+	margin-bottom: 4px
+	display: inline-block
+	input
+		margin-bottom: 12px
+	&.email
+		.fa
+			color: #76e786
+	&.lock
+		.fa
+			color: #fcd86b
+	&.lock-repeat
+		.fa
+			color: #fca26b					
+	.fa
+		color: #6acdfe
+		font-size: 18px
+		display: inline-block
+		margin-right: 3px	
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label
+	color: $black !important
+
+.password::-webkit-input-placeholder
+	color: #9a98ae
+	font-size: 50px
+	letter-spacing: -5px
+	top: -2px
+	position: relative
+.password::-moz-placeholder
+	color: #9a98ae
+	font-size: 50px
+	letter-spacing: -5px
+	top: -2px
+	position: relative		
+
+
+.lock
+	a
+		text-align: right
+		color: #ffb400
+		font-size: 13px		
+		font-weight: 400
+
+
+
+#modal2
+	.button
+		max-width: 225px
+	.email
+		.fa
+			color: #6acdfe	
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце

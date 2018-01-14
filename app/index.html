@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>JoinCoin</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+	<meta name="description"          content="Something beautiful is coming. Subscribe to the ŌURA Insider and be among the first to know.">
+	<meta property="og:url"           content="https://alcoguide.com/" />
+	<meta property="og:type"          content="alcoguide website" />
+	<meta property="og:title"         content="The Future of Sleep Is Near" />
+	<meta property="og:description"   content="Something beautiful is coming. Stay tuned." />
+	<meta property="og:image"         content="https://alcoguide.com/img/share.jpg" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color:  #f7f7ff; }</style>
+
+</head>
+
+<body class="home">
+
+	<div id="modal1" class="modal">
+    <div class="modal-content">
+      <form class="personalInfo">
+				<div class="personalInfo__title modal__title"> <img src="img/icon-reg.svg"> Регистрация</div>
+				<label class="modal__label name"><i class="fa fa-user" aria-hidden="true"></i> Пожалуйста, представьтесь:</label>
+				<input class="personalInfo__input" type="text" name="name" placeholder="Введите Ваше Имя" required>
+
+				<label class="modal__label email"><i class="fa fa-envelope" aria-hidden="true"></i>Введите e-mail (будет служить логином):</label>
+				<input class="personalInfo__input" type="email" name="email" placeholder="Введите e-mail" required>
+
+				<label class="modal__label lock"><i class="fa fa-lock" aria-hidden="true"></i> Придумайте пароль:</label>
+				<input class="personalInfo__input password" type="password" name="email" placeholder=". . . . . ." required>
+
+				<label class="modal__label lock-repeat"><i class="fa fa-lock" aria-hidden="true"></i> Повторите ввод пароля</label>
+				<input class="personalInfo__input password" type="password" name="email" placeholder=". . . . . ." required>
+
+				<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+    		<label class="agreement" for="filled-in-box">Я согласен с условиями и правилами сервиса</label>
+
+    		<button type="submit" class="button">Зарегистрироваться</button>
+    		<a href="#modal2" class="waves-effect waves-light modal-trigger exit">Войти в личный кабинет</a>
+			</form>
+    </div>
+		<div class="modal__close modal-action modal-close waves-effect"><i class="fa fa-times" aria-hidden="true"></i></div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <form class="personalInfo">
+				<div class="personalInfo__title modal__title"> <img src="img/icon-ex.png"> Войти в Личный кабинет</div>
+
+				<label class="modal__label email"><i class="fa fa-envelope" aria-hidden="true"></i>Введите ваш e-mail:</label>
+				<input class="personalInfo__input" type="email" name="email" placeholder="Введите e-mail" required>
+
+				<label class="modal__label lock"><i class="fa fa-lock" aria-hidden="true"></i> Придумайте пароль:
+					<a href="#" id="">Забыли пароль?</a>
+				</label>
+				<input class="personalInfo__input password" type="password" name="email" placeholder=". . . . . ." required>
+
+    		<button type="submit" class="button">Войти в Личный кабинет</button>
+    		<a href="#modal1" class="waves-effect waves-light modal-trigger exit">Зарегистрироваться</a>
+			</form>
+    </div>
+		<div class="modal__close modal-action modal-close waves-effect"><i class="fa fa-times" aria-hidden="true"></i></div>
+  </div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__content flex-grid">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt="JoinCoin"></a>
+
+				<ul id="slide-out" class="fixed menu">
+					<li class="menu__item"><a href="regulations.html" class="menu__link"><i class="fa fa-cog" aria-hidden="true"></i> Правила обмена</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><i class="fa fa-comments" aria-hidden="true"></i> FAQ</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><i class="fa fa-mobile" aria-hidden="true"></i> Контакты</a></li>
+					<li class="menu__item">
+						<a href="#modal2" class="menu__link waves-effect waves-light modal-trigger"><i class="fa fa-sign-in" aria-hidden="true"></i> Войти </a>
+					</li>
+					<a href="#modal1" class="button mobile-btn waves-effect waves-light modal-trigger">Зарегистрироваться</a>
+				</ul>
+				<a href="#modal1" class="button waves-effect waves-light modal-trigger">Зарегистрироваться</a>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons dp48">menu</i></a>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<h1 class="title">Обмен валют без СМС и регистраций</h1>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="cards-grid flex-grid">
+				<div class="card give">
+					<div class="cart__title">
+						<img src="img/icon-purse.svg">
+						<div class="cart__title__text">Отдаёте</div>
+					</div>
+					<form class="card__form">
+						<input class="card__form__input blue-input" type="text" name="value" placeholder="100 000">
+						<div class="choise-currency">
+							<div class="choise-currency__title">Валюта</div>
+							<select>
+								<option value="" selected>Все виды валют</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+
+			      <div class="card__form__item">
+			      	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test1"  />
+			      	<label class="form__currency" for="test1">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/sb-icon.png">
+									</div>
+			      			<div class="form__currency__text">СберОнлайн</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test2"  />
+			      	<label class="form__currency" for="test2">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/tin-icon.png">
+									</div>
+			      			<div class="form__currency__text">Тинькофф</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test3"  />
+			      	<label class="form__currency" for="test3">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/vtb-icon.png">
+									</div>
+			      			<div class="form__currency__text">ВТБ24</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test4"  />
+			      	<label class="form__currency" for="test4">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/pm-icon.png">
+									</div>
+			      			<div class="form__currency__text">Perfect Money</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test5"  />
+			      	<label class="form__currency" for="test5">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/pe-usd-icon.png">
+									</div>
+			      			<div class="form__currency__text">Payeer USD</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test6"  />
+			      	<label class="form__currency" for="test6">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/pe-usd-icon.png">
+									</div>
+			      			<div class="form__currency__text">Payeer RUB</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test7"  />
+			      	<label class="form__currency" for="test7">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/advcash-icon.png">
+									</div>
+			      			<div class="form__currency__text">AdvCash USD</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test8"  />
+			      	<label class="form__currency" for="test8">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/bitcoin-icon.png">
+									</div>
+			      			<div class="form__currency__text">Bitcoin Cash</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test9"  />
+			      	<label class="form__currency" for="test9">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/bitcoin-logo-icon.png">
+									</div>
+			      			<div class="form__currency__text">Bitcoin</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test10"  />
+			      	<label class="form__currency" for="test10">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/etr-icon.png">
+									</div>
+			      			<div class="form__currency__text">Ethereum</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test11"  />
+			      	<label class="form__currency" for="test11">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/visa-icon.png">
+									</div>
+			      			<div class="form__currency__text">Visa/Mastercard KZT</div>
+			      		</div>
+			      	</label>
+			      </div>
+
+					</form>
+				</div><!-- //card -->
+				<div class="card get">
+					<div class="cart__title">
+						<img src="img/icon-hand.svg">
+						<div class="cart__title__text">Получаете</div>
+					</div>
+					<form class="card__form">
+						<input class="card__form__input blue-input" type="text" name="value" placeholder="100 000">
+						<div class="choise-currency">
+							<div class="choise-currency__title">Валюта</div>
+							<select>
+								<option value="" selected>Все виды валют</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+
+			      <div class="card__form__item">
+			      	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test12"  />
+			      	<label class="form__currency" for="test12">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/sb-icon.png">
+									</div>
+			      			<div class="form__currency__text">СберОнлайн</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test13"  />
+			      	<label class="form__currency" for="test13">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/tin-icon.png">
+									</div>
+			      			<div class="form__currency__text">Тинькофф</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test14"  />
+			      	<label class="form__currency" for="test14">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/vtb-icon.png">
+									</div>
+			      			<div class="form__currency__text">ВТБ24</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test15"  />
+			      	<label class="form__currency" for="test15">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/pm-icon.png">
+									</div>
+			      			<div class="form__currency__text">Perfect Money</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test16"  />
+			      	<label class="form__currency" for="test16">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/pe-usd-icon.png">
+									</div>
+			      			<div class="form__currency__text">Payeer USD</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test17"  />
+			      	<label class="form__currency" for="test17">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/pe-usd-icon.png">
+									</div>
+			      			<div class="form__currency__text">Payeer RUB</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test18"  />
+			      	<label class="form__currency" for="test18">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/advcash-icon.png">
+									</div>
+			      			<div class="form__currency__text">AdvCash USD</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test19"  />
+			      	<label class="form__currency" for="test19">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/bitcoin-icon.png">
+									</div>
+			      			<div class="form__currency__text">Bitcoin Cash</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test20"  />
+			      	<label class="form__currency" for="test20">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/bitcoin-logo-icon.png">
+									</div>
+			      			<div class="form__currency__text">Bitcoin</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			      <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test21"  />
+			      	<label class="form__currency" for="test21">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/etr-icon.png">
+									</div>
+			      			<div class="form__currency__text">Ethereum</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+			       <div class="card__form__item">
+			       	<div class="item--bg"></div>
+			      	<input class="with-gap" name="group1" type="radio" id="test22"  />
+			      	<label class="form__currency" for="test22">
+			      		<div class="form__currency__content">
+									<div class="form__currency__icon">
+										<img src="img/visa-icon.png">
+									</div>
+			      			<div class="form__currency__text">Visa/Mastercard KZT</div>
+			      			<a href="#" class="replenish"><span>Пополнить?</span> 18.5441 btc</a>
+			      		</div>
+			      	</label>
+			      </div>
+
+					</form>
+				</div>
+				<div class="card send">
+					<div class="cart__title">
+						<img src="img/icon-send.png">
+						<div class="cart__title__text">Куда отправить?</div>
+					</div>
+					<div class="course">
+						<div class="course--bg"></div>
+						<div class="course__exchange">
+							<div class="course__exchange__title">Обмен по курсу:</div>
+							<div>1308584.917 руб. = 1 btc.</div>
+						</div>
+
+
+					<div class="course__item">
+						<div class="course__currency__content">
+								<div class="course__currency__icon">
+									<img src="img/sb-icon.png">
+		      		</div>
+		      		<div class="course__currency__text">СберОнлайн</div>
+						</div>
+						<div class="course__item__price">10000 руб.</div>
+					</div>
+
+					<div class="course__item mb">
+						<div class="course__currency__content">
+								<div class="course__currency__icon">
+									<img src="img/bitcoin-logo-icon.png">
+		      			</div>
+		      			<div class="course__currency__text">Bitcoin</div>
+						</div>
+						<div class="course__item__price">0.00764184 btc.</div>
+					</div>
+				</div>
+				<form class="personalInfo">
+					<div class="personalInfo__title">Введите данные для завершения обмена:</div>
+					<input class="personalInfo__input" type="email" name="email" placeholder="Ваш E-mail">
+					<input class="personalInfo__input" type="text" name="email" placeholder="Номер карты Сбербанка">
+					<input class="personalInfo__input" type="text" name="email" placeholder="Ваше Ф.И.О">
+					<input class="personalInfo__input" type="text" name="email" placeholder="Кошелек Bitcoin">
+
+					<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      		<label class="agreement" for="filled-in-box">Я согласен с условиями и правилами сервиса</label>
+
+      		<button type="submit" class="button">Обменять сейчас</button>
+				</form>
+			</div><!-- //card -->
+		</div>
+	</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer__content">
+				<div class="copy">© 2017Joincoin. Все права защищены</div>
+				<ul class="footer__menu">
+					<li class="menu__item"><a href="#" class="menu__link"><i class="fa fa-info-circle" aria-hidden="true"></i>О сервисе</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><i class="fa fa-cog" aria-hidden="true"></i> Правила обмена</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><i class="fa fa-mobile" aria-hidden="true"></i> Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
